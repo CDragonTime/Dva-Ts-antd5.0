@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch, Redirect } from 'dva/router';
 // import IndexPage from './routes/Index/IndexPage.tsx';
-import ReactArray from './routes/ReactArray/IndexPage.jsx';
-import PositionTest from './routes/PositionTest/Index.jsx';
+import ReactArray from '@src/routes/ReactArray/IndexPage.jsx';
+import PositionTest from '@src/routes/PositionTest/Index.jsx';
 
 function RouterConfig({ history }) {
   return (

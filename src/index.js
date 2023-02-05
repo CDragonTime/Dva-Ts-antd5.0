@@ -1,8 +1,9 @@
 import dva from 'dva';
 import './normal.less';
+import globalConfig from "@src/utils/global.ts"
 
 // 1. Initialize
-const app = dva();
+const app = dva({globalConfig});
 
 // 2. Plugins
 // app.use({});
