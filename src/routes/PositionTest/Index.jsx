@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'dva'
-import styles from './Index.less'
+import styles from './index.less'
 import { Tabs, TabsProps } from 'antd'
 import axios from 'axios'
 
