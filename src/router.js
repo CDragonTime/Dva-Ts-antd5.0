@@ -1,8 +1,7 @@
 import React from 'react';
 import { Router, Route, Switch, Redirect } from 'dva/router';
 // import IndexPage from './routes/Index/IndexPage.tsx';
-import ReactArray from '@src/routes/ReactArray/Index.jsx';
-import PositionTest from '@src/routes/PositionTest/Index.jsx';
+import ReactArray from '@src/routes/ReactArray/index';
 // import ServiceWorker from '@src/routes/ServiceWorker/index';
 
 function RouterConfig({ history }) {
@@ -12,9 +11,8 @@ function RouterConfig({ history }) {
       <Switch>
         {/* <Route path="/" exact component={IndexPage} /> */}
         <Route path="/reactArray" exact component={ReactArray} />
-        <Route path="/position" exact component={PositionTest} />
         {/* <Route path="/serviceWorker" exact component={PositionTest} /> */}
-        <Redirect path="/" to="/position"/>
+        <Redirect path="/" to="/reactArray"/>
       </Switch>
     </Router>
   );
